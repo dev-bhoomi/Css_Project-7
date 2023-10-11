@@ -1,0 +1,37 @@
+@import "mixin";
+@import "var";
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.main_header{
+    @include flexprob;
+    width:100vw;
+    height:100vh;
+    background: $bg-color;
+    h1{
+        color:#222f3e;
+        font-size: 5rem ;
+        &:hover{
+            color:#c8d6e5
+        }
+        &::after{
+            content:"";
+        }
+    }
+    p{
+        color:#222f3e;
+        font-size: 5rem ;
+        &:hover{
+            color:#c8d6e5
+        }
+    }
+}
+
+
